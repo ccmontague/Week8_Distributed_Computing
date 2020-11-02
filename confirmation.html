@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Confirmation Number</title>
+  </head>
+  <body>
+    <h1>Congratulations! Your Payment has been processed.</h1>
+    <p>
+      Here is your confirmation number: <span id="confirmation_number"></span>. 
+      Please save this number for your records.
+    </p>
+    <script>
+      var confirmation_number = localStorage["confirmation_number"];
+      document.getElementById("confirmation_number").innerHTML = confirmation_number;
+    </script>
+    </body>
+</html>
